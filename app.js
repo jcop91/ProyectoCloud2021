@@ -3,8 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
-const swaggerJsDoc = require('swagger-jsdoc');
-const swaggerUi = require('swagger-ui-express');
 require('dotenv').config();
 
 // Apuntar al archivo de rutas
@@ -18,6 +16,13 @@ const HOST = process.env.HOST || "0.0.0.0"
 
 // Creamos nuestra app apuntando la libreria
 const app = express();
+
+// Documentacion de codigo
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+const swaggerOptions = require('./src/services/swagger.config');
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // Se asignan los puertos o permisos para poder acceder
 const corsOptions = { origin: '*', optionsSuccessStatus: 200 }

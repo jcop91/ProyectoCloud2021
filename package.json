@@ -13,8 +13,8 @@
     "url": "git+https://github.com/jcop91/ProyectoCloud2021.git"
   },
   "keywords": [
-    "docker",
-    "nodejs",
+    "Docker",
+    "NodeJS",
     "express"
   ],
   "author": "Juan Carlos Ortiz Pinto & Francisco Andres de la Torre Valle",
