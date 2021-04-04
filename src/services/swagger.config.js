@@ -5,7 +5,7 @@ module.exports = {
         swaggerDefinition: {
             swagger:"2.0",
             info:{"title":"Proyecto Cloud Primavera 2021",
-            "description":"Este proyecto es para la clase de Programacion de Aplicaciones de Escritorio para la universidad de ITESO. La aplicación es un gestor de un restaurante el cual será para el uso tanto del cliente como para el control de ciertas actividades en el caso de los empleados.",
+            "description":"Documentacion de los endpoints disponibles para el proyecto del collar de monitoreo canino.",
             "contact": {
                 "name": "API Support",
               },

@@ -22,7 +22,7 @@ const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const swaggerOptions = require('./src/services/swagger.config');
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
-app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // Se asignan los puertos o permisos para poder acceder
 const corsOptions = { origin: '*', optionsSuccessStatus: 200 }
